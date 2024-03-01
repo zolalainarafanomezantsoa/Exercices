@@ -1,0 +1,46 @@
+
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+<div class="container mt-5 mb-5">
+    <h3 class="mb-5" style="font-style: italic; padding-left: 120px;">Des villas de type F4 à louer, confiez-nous votre rêve.</h3>
+    <div class="row">
+        <div class="col-lg-12" >
+          <div style="width: 100%; display: flex;flex-wrap: wrap; justify-content: space-evenly; padding: 40px;">
+
+              <div class="card shadow" style="width: 20rem;">
+                <img src="{% static 'css/images/maison4.jpg' %}"alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Villa type F4</h5>
+                  <p class="card-text">Une maison de luxe et de confort avec une cuisine bien équipée, trois chambres, un salon meublé, et une salle de bains."</p>
+                  <a href="{% url 'vise' %}" class="btn btn-success">Visitez</a>
+                  <a href="#" class="btn btn-info">Reservez</a>
+                </div>
+              </div>
+          
+            <div class="card shadow" style="width: 20rem;">
+              <img src="{% static 'css/images/maison2.jpg' %}"alt="">
+              <div class="card-body">
+                <h5 class="card-title">Villa 4</h5>
+                <p class="card-text">Une maison de vos reve pour vivre dans le luxe et le confort,elle a une cuisine (une pièce dédiée à la préparation des repas), trois chambres,un salon et une salle d'eau</p>
+                <a href="{% url 'visite' %}" class="btn btn-success">Visitez</a>
+                <a href="#" class="btn btn-info">Reservez</a>
+              </div>
+            </div>
+           
+            <div class="card shadow" style="width: 20rem;">
+              <img src="{% static 'css/images/maison3.jpg' %}"alt="">
+              <div class="card-body">
+                <h5 class="card-title">Villa F4</h5>
+                <p class="card-text">Une maison de vos rêve"Une maison de vos rêves, qui a une cuisine américaine, une salle de bains, et trois chambres avec placards." ,qui a une cuisine americain ,une salle de bain ,et trois chambre plancardé </p>
+                <a href="{% url 'visitez' %}" class="btn btn-success">Visitez</a>
+                <a href="" class="btn btn-info">Reservez</a>
+              </div>
+            </div>
+          </div>
+           
+              
+    </div>
+</div>
+
+{% endblock %}
